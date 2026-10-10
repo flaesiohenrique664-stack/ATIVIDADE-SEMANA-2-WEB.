@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Fundo diferente do container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container principal com largura máxima, padding e background próprio */
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-container h2 {
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.form-container p {
+    margin-bottom: 24px;
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+/* Organização principal do formulário usando Flexbox (de cima para baixo) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Grupo de inputs individuais */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+/* Bônus: Colocar nome e e-mail lado a lado */
+.row-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+/* Estilização de Labels */
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #444444;
+}
+
+/* Estilização de Inputs e Selects */
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #2563eb; /* Destaque ao focar no campo */
+}
+
+/* Botão de Enviar com destaque visual */
+.btn-submit {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+}
+
+/* Efeito de hover recomendado na dica */
+.btn-submit:hover {
+    background-color: #1d4ed8;
+}
